@@ -17,6 +17,12 @@ html {
     & a {
         color: white;
         text-decoration: none;
+
+        &:hover {
+            fill: #225a7d;
+            color: #225a7d;
+            
+        }
     }
 }
 
@@ -41,6 +47,7 @@ html {
     .logo-name {
         font-family: 'Bungee Shade', cursive;
         font-size: 3em;
+        text-shadow: -7px 13px 8px #245981;
     }
 
     li {
