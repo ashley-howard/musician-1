@@ -18,11 +18,11 @@ html {
         color: white;
         text-decoration: none;
 
-        &:hover {
-            fill: #225a7d;
-            color: #225a7d;
-            
-        }
+        // &:hover > a {
+        //     // fill: #225a7d;
+        //     // color: #225a7d;
+        //     color: gray;
+        // }
     }
 }
 
@@ -60,8 +60,20 @@ html {
     .social {
         display: flex;
         justify-content: space-between;
+
+        a {
+            position: relative;
+
+            &:hover > .circle {
+                opacity: 1;
+            }
+        }
     }
 
+}
+
+ul:hover li:not(:hover) {
+    opacity: .5;
 }
 
 .main {
@@ -73,5 +85,30 @@ html {
     h1 {
         font-family: 'Mr Dafoe', cursive;
         font-size: 15em;
+    }
+}
+
+.circle {
+    fill: transparent;
+    position: absolute;
+    left: -9px;
+    top: -9px;
+    width: 38px;
+    height: 38px;
+    opacity: 0;
+}
+
+.path {
+    stroke-dasharray: 100;
+    stroke-dashoffset: 1000;
+    animation: dash 1s linear infinite;
+    stroke: white;
+    stroke-width: 1px;
+    fill: transparent;
+}
+
+@keyframes dash {
+    to {
+        stroke-dashoffset: 0;
     }
 }
