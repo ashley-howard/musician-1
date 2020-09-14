@@ -1,11 +1,17 @@
 @import 'reset';
+@import 'slideshow';
+
+@font-face {
+    font-family: Quentin;
+    src: url(https://ashley.how/assets/fonts/Quentin.otf) format("opentype");
+}
+
 
 html {
     font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif
 }
 
-.container {
-    background-image: url('../media/pexels-dariusz-grosa-736355.jpg');
+#container {
     height: 100vh;
     width: 100vw;
     overflow: hidden;
@@ -17,12 +23,6 @@ html {
     & a {
         color: white;
         text-decoration: none;
-
-        // &:hover > a {
-        //     // fill: #225a7d;
-        //     // color: #225a7d;
-        //     color: gray;
-        // }
     }
 }
 
@@ -45,9 +45,11 @@ html {
     }
 
     .logo-name {
-        font-family: 'Bungee Shade', cursive;
+        // font-family: 'Bungee Shade', cursive;
+        font-family: Quentin, cursive;
+
         font-size: 3em;
-        text-shadow: -7px 13px 8px #245981;
+        text-shadow: -7px 13px 8px #ffffff73;
     }
 
     li {
@@ -63,8 +65,9 @@ html {
 
         a {
             position: relative;
+            fill: white;
 
-            &:hover > .circle {
+            &:hover>.circle {
                 opacity: 1;
             }
         }
@@ -81,6 +84,7 @@ ul:hover li:not(:hover) {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 
     h1 {
         font-family: 'Mr Dafoe', cursive;
@@ -105,6 +109,38 @@ ul:hover li:not(:hover) {
     stroke: white;
     stroke-width: 1px;
     fill: transparent;
+}
+
+.dates-container {
+    background: #ffffff73;
+    padding: 20px;
+    border-radius: 10px;
+
+    .row {
+        display: flex;
+        justify-content: space-between;
+        padding: 15px 0;
+        align-items: center;
+
+        .location {
+            font-size: 0.9em;
+            color: #d8d8d8;
+        }
+
+        .about {
+            width: 70%;
+        }
+
+        .buy {
+            a {
+                background: white;
+                color: black !important;
+                padding: 7px 14px;
+                border-radius: 4px;
+                font-weight: 600;
+            }
+        }
+    }
 }
 
 @keyframes dash {
