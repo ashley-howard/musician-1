@@ -114,7 +114,8 @@ ul:hover li:not(:hover) {
 }
 
 .dates-container {
-    @extend %bg-blur;
+    // @extend %bg-blur;
+    background: #000000a6;
     padding: 20px;
     border-radius: 10px;
 
