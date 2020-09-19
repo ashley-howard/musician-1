@@ -188,8 +188,21 @@ ul:hover li:not(:hover) {
             font-size: 1.5em;
         }
 
+        &--social {
+            padding: 10px 0;
+
+            svg {
+                cursor: pointer;
+
+                &:hover {
+                    fill: #ad5957;
+                }
+            }
+        }
+
         &--year {
             font-size: 1em;
+            margin-top: 5px;
         }
 
         &--tracks {
