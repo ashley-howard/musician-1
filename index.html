@@ -17,13 +17,13 @@
     <div id="container">
         <div class="sidebar">
             <div class="inner-container">
-                <div class="logo-name"><a href="#">John Smith</a></div>
+                <div class="logo-name" onclick="currentSlide(1)" onmouseover="currentSlide(1)">John Smith</div>
 
                 <ul>
-                    <li onclick="currentSlide(1)">Home</li>
-                    <li onclick="currentSlide(2)">Tour Dates</li>
-                    <li onclick="currentSlide(3)">Video</li>
-                    <li><a href="#">Discography</a></li>
+                    <!-- <li onclick="currentSlide(1)">Home</li> -->
+                    <li onclick="currentSlide(2)" onmouseover="currentSlide(2)">Tour Dates</li>
+                    <li onclick="currentSlide(3)" onmouseover="currentSlide(3)">Video</li>
+                    <li onclick="currentSlide(4)" onmouseover="currentSlide(4)">Discography</li>
                     <li><a href="#">Event</a></li>
                     <li><a href="#">Shop</a></li>
                 </ul>
@@ -178,6 +178,60 @@
                     <iframe width="800" height="500" src="https://www.youtube.com/embed/wxM1ZZJpeiM" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen></iframe>
+                </div>
+
+                <div class="mySlides fade">
+
+                    <div class="album-container">
+                        <div class="album">
+                            <div class="album--artwork">
+                                <img src="media/album-2.jpg" alt="">
+                            </div>
+                            <div class="album--details">
+                                <div class="album--title">Album 2</div>
+                                <div class="album--year">2020</div>
+                            </div>
+                            <div class="album--tracks">
+                                <ol>
+                                    <li>Track 1</li>
+                                    <li>Track 2</li>
+                                    <li>Track 3</li>
+                                    <li>Track 4</li>
+                                    <li>Track 5</li>
+                                    <li>Track 6</li>
+                                    <li>Track 7</li>
+                                    <li>Track 8</li>
+                                    <li>Track 9</li>
+                                    <li>Track 10</li>
+                                </ol>
+                            </div>
+                        </div>
+
+                        <div class="album">
+                            <div class="album--artwork">
+                                <img src="media/album-1.jpg" alt="">
+                            </div>
+                            <div class="album--details">
+                                <div class="album--title">Album 1</div>
+                                <div class="album--year">2018</div>
+                            </div>
+                            <div class="album--tracks">
+                                <ol>
+                                    <li>Track 1</li>
+                                    <li>Track 2</li>
+                                    <li>Track 3</li>
+                                    <li>Track 4</li>
+                                    <li>Track 5</li>
+                                    <li>Track 6</li>
+                                    <li>Track 7</li>
+                                    <li>Track 8</li>
+                                    <li>Track 9</li>
+                                    <li>Track 10</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
 
