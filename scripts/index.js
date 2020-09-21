@@ -27,6 +27,9 @@ function showSlides(n) {
 }
 
 function openMenu() {
-//  document.getElementById('menu-toggle')
   document.getElementById("sidebar").style.display = "flex";
+}
+
+function closeMenu() {
+  document.getElementById("sidebar").style.display = "none";
 }

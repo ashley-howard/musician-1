@@ -16,14 +16,20 @@
     <!-- <div id="container" style="background-image: url('media/band.jpg')"> -->
     <div id="container">
         <div class="logo-name-small" onclick="currentSlide(1)">John Smith</div>
-        <div class="menu-open-toggle">
-            <svg id="menu-toggle" onclick="openMenu()" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+        <div class="menu-open">
+            <svg id="menu-toggle" onclick="openMenu()" title="Open menu" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                 viewBox="0 0 24 24">
                 <path d="M24 6h-24v-4h24v4zm0 4h-24v4h24v-4zm0 8h-24v4h24v-4z" /></svg>
         </div>
         <div id="sidebar">
             <div class="inner-container">
                 <div class="logo-name" onclick="currentSlide(1)">John Smith</div>
+                <div class="menu-close" title="Close menu" onclick="closeMenu()">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+                        <path
+                            d="M23 20.168l-8.185-8.187 8.185-8.174-2.832-2.807-8.182 8.179-8.176-8.179-2.81 2.81 8.186 8.196-8.186 8.184 2.81 2.81 8.203-8.192 8.18 8.192z" />
+                    </svg>
+                </div>
 
                 <ul>
                     <!-- <li onclick="currentSlide(1)">Home</li> -->
