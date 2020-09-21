@@ -30,7 +30,30 @@ html {
     }
 }
 
-.sidebar {
+.logo-name,
+.logo-name-small {
+    font-family: Quentin, cursive;
+    font-size: 4.5em;
+    text-shadow: -7px 13px 8px #ffffff73;
+    cursor: pointer;
+}
+
+.logo-name-small {
+    position: absolute;
+    font-size: 1.5em;
+    left: 0;
+    // right: 0;
+    // text-align: center;
+    padding: 15px;
+}
+
+.menu-open-toggle {
+    position: absolute;
+    right: 0;
+    padding: 15px;
+}
+
+#sidebar {
     width: 18%;
     display: flex;
     flex-direction: column;
@@ -47,13 +70,7 @@ html {
         justify-content: space-between;
     }
 
-    .logo-name {
-        // font-family: 'Bungee Shade', cursive;
-        font-family: Quentin, cursive;
-        font-size: 4.5em;
-        text-shadow: -7px 13px 8px #ffffff73;
-        cursor: pointer;
-    }
+
 
     li {
         padding: 15px 0px;
@@ -213,6 +230,7 @@ ul:hover li:not(:hover) {
                 flex-direction: column;
                 flex-wrap: wrap;
                 max-height: 120%;
+                list-style-type: decimal-leading-zero;
             }
 
             li {
@@ -236,5 +254,23 @@ ul:hover li:not(:hover) {
 @keyframes dash {
     to {
         stroke-dashoffset: 0;
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+
+    .main h1 {
+        font-size: 8em;
+    }
+
+    #sidebar {
+        display: none;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        z-index: 1;
+        text-align: center;
     }
 }

@@ -25,3 +25,8 @@ function showSlides(n) {
   container.style.backgroundImage = `url('media/image-${[slideIndex]}.jpg')`;
   // dots[slideIndex - 1].className += " active";
 }
+
+function openMenu() {
+//  document.getElementById('menu-toggle')
+  document.getElementById("sidebar").style.display = "flex";
+}
