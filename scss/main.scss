@@ -233,7 +233,7 @@ ul:hover li:not(:hover) {
                 flex-direction: column;
                 flex-wrap: wrap;
                 max-height: 120%;
-                list-style-type: decimal-leading-zero;
+                list-style-type: lower-roman;
             }
 
             li {
@@ -275,8 +275,12 @@ ul:hover li:not(:hover) {
         width: 100%;
     }
 
-    .dates-container .row .about {
-        width: auto;
+    .dates-container {
+        background: transparent;
+
+        .row .about {
+            width: auto;
+        }
     }
 
     .main h1 {
@@ -294,6 +298,8 @@ ul:hover li:not(:hover) {
             flex-direction: column;
             background: transparent;
             padding: 50px;
+            align-items: center;
+            text-align: center;
         }
 
         .album--details {
@@ -302,10 +308,15 @@ ul:hover li:not(:hover) {
 
 
         .album--tracks {
-            width: 100%;
+            // width: 100%;
+
+            // ol {
+            //     list-style-type: lower-roman;
+            // }
 
             li {
-                margin-left: 26px;
+                margin-bottom: 20px;
+                margin-left: 0;
             }
         }
     }

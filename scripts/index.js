@@ -7,6 +7,7 @@ function plusSlides(n) {
 
 function currentSlide(n) {
   showSlides(slideIndex = n);
+  document.getElementById("sidebar").style.display = "none";
 }
 
 function showSlides(n) {
