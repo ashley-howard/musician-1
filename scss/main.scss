@@ -47,11 +47,13 @@ html {
     padding: 15px;
 }
 
-.menu-open, .menu-close {
+.menu-open,
+.menu-close {
     position: absolute;
     right: 0;
     top: 0;
     padding: 15px;
+    z-index: 1;
 }
 
 #sidebar {
@@ -261,13 +263,55 @@ ul:hover li:not(:hover) {
 
 @media only screen and (max-width: 600px) {
 
+    // #container {
+    //     height: 100%;
+    //     width: 100%;
+    // }
+
+    .main,
+    .mySlides,
+    #sidebar,
+    .slideshow-container {
+        width: 100%;
+    }
+
+    .dates-container .row .about {
+        width: auto;
+    }
+
     .main h1 {
         font-size: 8em;
     }
 
+    iframe {
+        width: 100%;
+    }
+
+    .album-container {
+        .album {
+            height: 100%;
+            width: 100%;
+            flex-direction: column;
+            background: transparent;
+            padding: 50px;
+        }
+
+        .album--details {
+            padding: 0;
+        }
+
+
+        .album--tracks {
+            width: 100%;
+
+            li {
+                margin-left: 26px;
+            }
+        }
+    }
+
     #sidebar {
         display: none;
-        width: 100%;
         position: absolute;
         top: 0;
         bottom: 0;
