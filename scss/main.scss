@@ -267,7 +267,7 @@ ul:hover li:not(:hover) {
 }
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (orientation: portrait) {
 
     // #container {
     //     height: 100%;
@@ -284,7 +284,7 @@ ul:hover li:not(:hover) {
     .mySlides,
     #sidebar,
     .slideshow-container {
-        width: 100%;
+        width: 100% !important;
     }
 
     .dates-container {
