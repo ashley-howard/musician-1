@@ -260,6 +260,12 @@ ul:hover li:not(:hover) {
     }
 }
 
+#menu-toggle,
+.menu-close,
+.logo-name-small {
+    display: none;
+}
+
 
 @media only screen and (max-width: 600px) {
 
@@ -267,6 +273,12 @@ ul:hover li:not(:hover) {
     //     height: 100%;
     //     width: 100%;
     // }
+
+    #menu-toggle,
+    .menu-close,
+    .logo-name-small {
+        display: flex;
+    }
 
     .main,
     .mySlides,
